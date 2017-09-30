@@ -1,3 +1,30 @@
+# XPMan EventSourcing blurb
+
+EventSourcing is the best thing ever? 
+
+In this session we'll discuss what EventSourcing is, its pros and cons, and some use-cases.
+
+To make it real we'll be running through a semi-guided EventSourced Checkout kata. 
+
+Before the event:
+ 
+ * You'll need to (fork and) pull [the repo at https://github.com/pauldambra/EventSourcing](https://github.com/pauldambra/EventSourcing)
+ * And make sure you've set up [EventStore](https://eventstore.org/) - it's probably easiest to use [docker](https://www.docker.com/)
+
+-----------
+
+## To run
+
+Currently open two terminals
+
+ 1) run `./docker.sh` (or have eventstore installed and running locally)
+ 2) run `make test`
+
+## requirements
+
+ * Event Store 4.0.3.0
+ * .Net core 1.1
+
 # Checkout Kata
 
 Implement the code for a supermarket checkout that calculates the total price of a number of items.
@@ -17,15 +44,3 @@ Weekly offers change frequently. The initial prices and offers are as follows:
 | B           |   30                |   2 for 45       |
 | C           |   60                |                  |
 | D           |   99                | 
-
-## To run
-
-Currently open two terminals
-
- 1) run `./docker.sh` (or have eventstore installed and running locally)
- 2) run `make test`
-
-## requirements
-
- * Event Store 4.0.3.0
- * .Net core 1.1
