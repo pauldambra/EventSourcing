@@ -5,6 +5,15 @@ using System;
 
 namespace EventCheckout.Tests
 {
+
+    public class WriteModelTests
+    {
+        [Fact]
+        // a command can be written to the event stream
+        public void ACommandBecomesAnEvent()
+        {
+        }
+    }
  
    public class ReadModelTests
     {
@@ -19,14 +28,7 @@ namespace EventCheckout.Tests
         }
     }
 
-    public class WriteModelTests
-    {
-        [Fact]
-        // a command can be written to the event stream
-        public void ACommandBecomesAnEvent()
-        {
-        }
-    }
+
 
 }
 
